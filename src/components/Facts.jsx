@@ -38,7 +38,7 @@ function AnimatedNumber({ value, suffix }) {
 
 function Facts() {
   const { t } = useLanguage()
-  const facts = [t.facts.fact1, t.facts.fact2, t.facts.fact3, t.facts.fact4]
+  const facts = [t.facts.fact1, t.facts.fact2, t.facts.fact3, t.facts.fact4, t.facts.fact5, t.facts.fact6]
 
   return (
     <section className="section" id="facts">

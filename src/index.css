@@ -527,6 +527,10 @@ button {
   box-shadow: var(--glow);
 }
 
+.why-card:last-child {
+  grid-column: 1 / -1;
+}
+
 .why-card h3 {
   margin-bottom: 0.5rem;
   color: var(--primary);

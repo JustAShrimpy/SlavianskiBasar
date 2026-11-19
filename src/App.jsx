@@ -13,7 +13,6 @@ const Header = lazy(() => import('./components/Header'))
 const Hero = lazy(() => import('./components/Hero'))
 const Facts = lazy(() => import('./components/Facts'))
 const Why = lazy(() => import('./components/Why'))
-const EnergyData = lazy(() => import('./components/EnergyData'))
 const Timeline = lazy(() => import('./components/Timeline'))
 const EnergyMap = lazy(() => import('./components/EnergyMap'))
 const Tips = lazy(() => import('./components/Tips'))
@@ -37,9 +36,6 @@ function App() {
           </Reveal>
           <Reveal>
             <Why />
-          </Reveal>
-          <Reveal>
-            <EnergyData />
           </Reveal>
           <Reveal>
             <Timeline />

@@ -10,7 +10,6 @@ function Header() {
   const links = [
     { href: '#facts', label: t.header.facts },
     { href: '#why', label: t.header.why },
-    { href: '#data', label: t.header.festival },
     { href: '#timeline', label: t.header.timeline },
     { href: '#map', label: t.header.venues },
     { href: '#tips', label: t.header.tips },
