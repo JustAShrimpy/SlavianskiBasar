@@ -34,7 +34,7 @@ function ContactForm() {
     setErrors(newErrors)
     if (Object.keys(newErrors).length > 0) return
 
-    const subject = encodeURIComponent('Обратная связь с сайта EnergoBel')
+    const subject = encodeURIComponent('Обратная связь с сайта Славянский базар в Витебске')
     const body = encodeURIComponent(`Имя: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)
     window.location.href = `mailto:justalilshrimp@gmail.com?subject=${subject}&body=${body}`
   }

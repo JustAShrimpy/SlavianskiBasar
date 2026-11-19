@@ -10,15 +10,11 @@ function Header() {
   const links = [
     { href: '#facts', label: t.header.facts },
     { href: '#why', label: t.header.why },
-    { href: '#energy', label: t.header.energy },
+    { href: '#data', label: t.header.festival },
     { href: '#timeline', label: t.header.timeline },
-    { href: '#map', label: t.header.map },
-    { href: '#calculator', label: t.header.calculator },
+    { href: '#map', label: t.header.venues },
     { href: '#tips', label: t.header.tips },
     { href: '#quiz', label: t.header.quiz },
-    { href: '#glossary', label: t.header.glossary },
-    { href: '#game', label: t.header.game },
-    { href: '#checklist', label: lang === 'by' ? 'Чэк-ліст' : 'Чек-лист' },
     { href: '#contact', label: lang === 'by' ? 'Зваротная сувязь' : 'Обратная связь' },
   ]
 

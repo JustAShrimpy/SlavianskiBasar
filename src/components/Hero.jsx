@@ -56,8 +56,8 @@ function Hero() {
         <p className="animate-fade-in">{t.hero.subtitle}</p>
         <p className="hero-mission animate-fade-in">{t.hero.mission}</p>
         <div className="hero-buttons animate-fade-in">
-          <a href="#calculator" className="btn btn-primary">
-            {t.hero.calculator}
+          <a href="#data" className="btn btn-primary">
+            {t.hero.more}
           </a>
           <a href="#tips" className="btn btn-secondary">
             {t.hero.tips}
@@ -67,18 +67,20 @@ function Hero() {
         <div className="hero-stats">
           <div className="hero-stat">
             <div className="hero-stat-number">
-              <CountUp end={40} suffix="%" />
+              <CountUp end={35} suffix="+" />
             </div>
             <div className="hero-stat-label">{t.hero.stat1}</div>
           </div>
           <div className="hero-stat">
             <div className="hero-stat-number">
-              <CountUp end={30} prefix="до " suffix="%" />
+              <CountUp end={30} suffix="+" />
             </div>
             <div className="hero-stat-label">{t.hero.stat2}</div>
           </div>
           <div className="hero-stat">
-            <div className="hero-stat-number">10</div>
+            <div className="hero-stat-number">
+              <CountUp end={100} suffix="K+" />
+            </div>
             <div className="hero-stat-label">{t.hero.stat3}</div>
           </div>
         </div>
