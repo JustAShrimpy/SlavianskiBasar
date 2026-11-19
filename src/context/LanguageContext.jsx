@@ -5,11 +5,11 @@ const LanguageContext = createContext(null)
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    return localStorage.getItem('energobel-lang') || 'ru'
+    return localStorage.getItem('slavianski-bazar-lang') || 'ru'
   })
 
   useEffect(() => {
-    localStorage.setItem('energobel-lang', lang)
+    localStorage.setItem('slavianski-bazar-lang', lang)
   }, [lang])
 
   const t = translations[lang]

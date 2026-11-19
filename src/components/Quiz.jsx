@@ -6,20 +6,20 @@ function Quiz() {
   const questions = t.quiz.questions
 
   const [current, setCurrent] = useState(() => {
-    const saved = localStorage.getItem('energobel-quiz-current')
+    const saved = localStorage.getItem('slavianski-bazar-quiz-current')
     return saved ? Number(saved) : 0
   })
   const [selected, setSelected] = useState(null)
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(() => {
-    const saved = localStorage.getItem('energobel-quiz-score')
+    const saved = localStorage.getItem('slavianski-bazar-quiz-score')
     return saved ? Number(saved) : 0
   })
   const [finished, setFinished] = useState(false)
 
   useEffect(() => {
-    localStorage.setItem('energobel-quiz-current', current)
-    localStorage.setItem('energobel-quiz-score', score)
+    localStorage.setItem('slavianski-bazar-quiz-current', current)
+    localStorage.setItem('slavianski-bazar-quiz-score', score)
   }, [current, score])
 
   const handleAnswer = (index) => {
@@ -47,8 +47,8 @@ function Quiz() {
     setShowResult(false)
     setScore(0)
     setFinished(false)
-    localStorage.removeItem('energobel-quiz-current')
-    localStorage.removeItem('energobel-quiz-score')
+    localStorage.removeItem('slavianski-bazar-quiz-current')
+    localStorage.removeItem('slavianski-bazar-quiz-score')
   }
 
   const progress = questions.length > 0 ? ((finished ? questions.length : current) / questions.length) * 100 : 0

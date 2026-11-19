@@ -1,4 +1,4 @@
-const CACHE_NAME = 'energobel-v2'
+const CACHE_NAME = 'slavianski-bazar-v2'
 const PRECACHE = ['/', '/index.html']
 
 self.addEventListener('install', (event) => {
