@@ -57,15 +57,15 @@ function Particles() {
       draw() {
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(0, 230, 118, ${this.opacity})`
+        ctx.fillStyle = `rgba(255, 152, 0, ${this.opacity})`
         ctx.fill()
       }
     }
 
     const drawTriangle = (p1, p2, p3, alpha) => {
       const gradient = ctx.createLinearGradient(p1.x, p1.y, p3.x, p3.y)
-      gradient.addColorStop(0, `rgba(0, 230, 118, ${alpha * 0.35})`)
-      gradient.addColorStop(1, `rgba(41, 182, 246, ${alpha * 0.25})`)
+      gradient.addColorStop(0, `rgba(255, 152, 0, ${alpha * 0.35})`)
+      gradient.addColorStop(1, `rgba(255, 202, 40, ${alpha * 0.25})`)
 
       ctx.beginPath()
       ctx.moveTo(p1.x, p1.y)
@@ -107,7 +107,7 @@ function Particles() {
           if (distance < maxDist) {
             const opacity = 0.12 * (1 - distance / maxDist)
             ctx.beginPath()
-            ctx.strokeStyle = `rgba(0, 230, 118, ${opacity})`
+            ctx.strokeStyle = `rgba(255, 152, 0, ${opacity})`
             ctx.lineWidth = 0.6
             ctx.moveTo(particles[i].x, particles[i].y)
             ctx.lineTo(particles[j].x, particles[j].y)

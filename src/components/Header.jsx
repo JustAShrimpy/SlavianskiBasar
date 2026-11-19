@@ -22,7 +22,7 @@ function Header() {
     <header className="header">
       <div className="header-inner">
         <div className="logo">
-          <span className="logo-icon">⚡</span>
+          <span className="logo-icon">⭐</span>
           <span>{t.header.logo}</span>
         </div>
 

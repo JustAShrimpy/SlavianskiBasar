@@ -76,9 +76,9 @@ function BackgroundEffects() {
 
         ctx.beginPath()
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(0, 230, 118, ${star.opacity})`
+        ctx.fillStyle = `rgba(255, 152, 0, ${star.opacity})`
         ctx.shadowBlur = isMobile ? 4 : 8
-        ctx.shadowColor = 'rgba(0, 230, 118, 0.5)'
+        ctx.shadowColor = 'rgba(255, 152, 0, 0.5)'
         ctx.fill()
         ctx.shadowBlur = 0
       })
@@ -91,9 +91,9 @@ function BackgroundEffects() {
       const length = Math.random() * 100 + 60
       const angle = Math.PI / 4
       const gradient = ctx.createLinearGradient(x, y, x - length * Math.cos(angle), y + length * Math.sin(angle))
-      gradient.addColorStop(0, 'rgba(0, 230, 118, 0)')
-      gradient.addColorStop(0.5, 'rgba(0, 230, 118, 0.6)')
-      gradient.addColorStop(1, 'rgba(0, 230, 118, 0)')
+      gradient.addColorStop(0, 'rgba(255, 152, 0, 0)')
+      gradient.addColorStop(0.5, 'rgba(255, 152, 0, 0.6)')
+      gradient.addColorStop(1, 'rgba(255, 152, 0, 0)')
 
       ctx.beginPath()
       ctx.moveTo(x, y)
@@ -114,7 +114,7 @@ function BackgroundEffects() {
 
         ctx.beginPath()
         ctx.arc(ring.x, ring.y, ring.radius, 0, Math.PI * 2)
-        ctx.strokeStyle = `rgba(0, 230, 118, ${ring.opacity * (1 - ring.radius / ring.maxRadius)})`
+        ctx.strokeStyle = `rgba(255, 152, 0, ${ring.opacity * (1 - ring.radius / ring.maxRadius)})`
         ctx.lineWidth = 1
         ctx.stroke()
       })
